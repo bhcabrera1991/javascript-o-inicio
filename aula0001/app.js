@@ -152,3 +152,9 @@ function mensagem(){
     console.log("🤣")
 }
 mensagem()
+
+function conta(horas,salario){
+    console.log(horas*salario)
+}
+
+conta(140,75)
