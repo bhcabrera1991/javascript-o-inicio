@@ -55,17 +55,100 @@ console.log(typeof fumante)
 // Operadores
 //     Operador Atribuição
 
+salario = 2500
+
 //     Operadores aritméticos
+//(+,-,/,*)
+
+let n1=10, n2=5
+console.log(n1+n2)//soma
+console.log(n1-n2)//subtracao
+console.log(n1*n2)//multiplicacao
+console.log(n1/n2)//divisao
+console.log(10%3)//modulo(mostra o resto da divisao)
 
 //     Operadores relacionais
 
-//     Operadores lógicos
+//==,<,>,<=,>=!=,===
+console.log(n1==n2)
+console.log(n1!=n2)
+console.log(n1>n2)
+console.log(n1>=n2)
+console.log(n1<=n2)
+console.log(n1<n2)
+
+
+
+//     Operadores lógicos 
+
+let altura =1.8
+let peso =80
+let tipo ="crianca"
+
+//muda o resultado final, se for verdadeiro vira falso e se for falso vira verdadeiro
+console.log(!10>5)
+
+//com ||(ou) apenas uma verificacao precisa ser verdadeira
+console.log(altura>1.50 || peso<150 || tipo!="crianca")
+
+// com &&(e) todas as verificacoes devem ser verdadeiras para resultado final ser verdadeiro
+console.log(altura >1.5 && peso <150 && tipo=="crianca")
 
 // Estrutura
 //     Estrutura de controle/decisão
 
+let carro ="fiat"
+if(carro=="bmw"){
+    console.log("vc ta bem mais ou menos")
+} else{
+    console.log("a vida ta progredindo")
+}
+
+let idadealuno=20
+if(idadealuno>=18){
+    console.log("maior de idade")
+}else{
+    console.log("menor de idade")
+}
+
 //     Laços de repetição
+
+let controle=1
+while(controle<=10){
+    console.log(controle)
+    controle=controle+1
+}
+
+controle=1
+while(controle <=10){
+    console.log(7*controle)
+    controle=controle+1
+}
 
 // Arrays --> vetor
 
+let zoologico=['leao', 'elefante','zebra','ariranha','lobo guara',"arara"]
+console.log(zoologico[2])
+console.log(zoologico.length)//.length(ele conta o tanto de "casa/elemento" no vetor) 
+
+let fruta=["🍓",'🍊',"🍍",'🍐']
+console.log(fruta.length)
+fruta.push('🤣')//.push(ele aumenta mais uma "casa/elemento" no vetor)
+console.log(fruta.length)
+
+
+let aluno =[]
+aluno.push("bruno")
+aluno.push('henrique')
+console.log(aluno)
+
+
 // Funções personalizadas
+//para criar uma funcao tem que chamar o COMANDO function
+
+function mensagem(){
+    console.log("ola")
+    console.log("Seja bem vindo")
+    console.log("🤣")
+}
+mensagem()
