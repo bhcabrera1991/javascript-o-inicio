@@ -19,11 +19,10 @@ function fnConverterValor(){
     document.getElementById("valorConvertido").innerText=("R$" +total.toFixed(2))
 }
 
-function fnConverterEuro(){
-    let valorInserido =0, total=0
-    valorInserido=document.getElementById("valorEuro").value
-    total= valorInserido*5.22
-    document.getElementById("valorEmEuro").innerText=(total)
+
+function fnEuro(){
+    let valor=0,total=0
+    valor = document.getElementById("euro").value
+    total=valor*0.86
+    document.getElementById("resultado").innerText=("€"+ total)
 }
-
-
